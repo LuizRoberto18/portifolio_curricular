@@ -19,9 +19,9 @@ class GlassContent extends StatelessWidget {
       child: BackdropFilter(
         filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
         child: Container(
-          padding: EdgeInsets.symmetric(horizontal: kDefaultPadding * 2),
+          padding: EdgeInsets.symmetric(horizontal: kDefaultPadding * 3),
           constraints:
-              BoxConstraints(maxWidth: 1100, maxHeight: size.height * 0.8),
+              BoxConstraints(maxWidth: 1100, maxHeight: size.height * 0.7),
           width: double.infinity,
           color: Colors.white.withOpacity(0),
           child: Column(

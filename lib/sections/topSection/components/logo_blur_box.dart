@@ -25,7 +25,7 @@ class LogoAndBlurBox extends StatelessWidget {
           ),
           Spacer(),
           GlassContent(size: size),
-          Spacer(flex: 3),
+          Spacer(flex: 2),
         ],
       ),
     );
