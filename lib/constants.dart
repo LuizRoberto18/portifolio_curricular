@@ -4,6 +4,7 @@ const kTextColor = Color(0xFF707070);
 const kTextLightColor = Color(0xFF555555);
 
 const kDefaultPadding = 20.0;
+
 final kDefaultShadow = BoxShadow(
   offset: Offset(0, 50),
   blurRadius: 50,
@@ -16,7 +17,7 @@ final kDefaultCardShadow = BoxShadow(
   color: Colors.black.withOpacity(0.1),
 );
 
-//textField dedign
+// TextField dedign
 final kDefaultInputDecorationTheme = InputDecorationTheme(
   border: kDefaultOutlineInputBorder,
   enabledBorder: kDefaultOutlineInputBorder,
