@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:portifolio_curriculo/constants.dart';
+import 'package:portifolio_curriculo/sections/about/about_section.dart';
+import 'package:portifolio_curriculo/sections/service/service_section.dart';
 import 'package:portifolio_curriculo/sections/topSection/top_section.dart';
 
 class HomePage extends StatefulWidget {
@@ -16,8 +19,11 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             TopSection(),
+            SizedBox(height: kDefaultPadding * 2),
+            AboutSection(),
+            ServiceSection(),
             SizedBox(
-              height: 300,
+              height: 500,
             ),
           ],
         ),

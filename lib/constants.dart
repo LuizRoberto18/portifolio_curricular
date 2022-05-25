@@ -14,9 +14,20 @@ final kDefaultShadow = BoxShadow(
 final kDefaultCardShadow = BoxShadow(
   offset: Offset(0, 20),
   blurRadius: 50,
-  color: Colors.black.withOpacity(0.1),
+  color: Colors.white.withOpacity(0.3),
 );
 
+final kDefaultGradiente = LinearGradient(
+  begin: Alignment.bottomLeft,
+  end: Alignment.topRight,
+  stops: [0.1, 0.3, 0.6, 0.9],
+  colors: [
+    Color.fromARGB(255, 20, 0, 34),
+    Color.fromARGB(255, 62, 1, 65),
+    Color.fromARGB(255, 104, 5, 124),
+    Color.fromARGB(255, 202, 6, 143),
+  ],
+);
 // TextField dedign
 final kDefaultInputDecorationTheme = InputDecorationTheme(
   border: kDefaultOutlineInputBorder,

@@ -28,9 +28,9 @@ class _MenuState extends State<Menu> {
       height: 100,
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(10),
-          topRight: Radius.circular(10),
+        borderRadius: BorderRadius.all(
+          Radius.circular(14),
+          //topRight: Radius.circular(10),
         ),
         boxShadow: [kDefaultShadow],
       ),
@@ -71,8 +71,9 @@ class _MenuState extends State<Menu> {
                 left: 0,
                 right: 0,
                 bottom:
-                    selectedIndex != index && hoverIndex == index ? -20 : -32,
-                child: Image.asset("assets/images/hover.png"),
+                    selectedIndex != index && hoverIndex == index ? -15 : -32,
+                child: Image.asset("assets/images/hover.png",
+                    height: 32, width: 70),
               ),
               // Select
               AnimatedPositioned(
@@ -80,7 +81,8 @@ class _MenuState extends State<Menu> {
                 left: 0,
                 right: 0,
                 bottom: selectedIndex == index ? -2 : -32,
-                child: Image.asset("assets/images/hover.png"),
+                child: Image.asset("assets/images/hover.png",
+                    height: 32, width: 70),
               ),
             ],
           ),

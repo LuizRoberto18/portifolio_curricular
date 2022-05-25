@@ -2,17 +2,16 @@ import 'package:flutter/material.dart';
 
 import '../constants.dart';
 
-class DefaultButton extends StatelessWidget {
-  const DefaultButton({
+class MyTextButton extends StatelessWidget {
+  const MyTextButton({
     Key? key,
-    required this.text,
     required this.icon,
+    required this.text,
     required this.press,
   }) : super(key: key);
-
-  final String text;
   final IconData icon;
-  final Function press;
+  final String text;
+  final Function? press;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -20,9 +19,8 @@ class DefaultButton extends StatelessWidget {
       width: 200,
       padding: EdgeInsets.symmetric(vertical: 5, horizontal: 5),
       decoration: BoxDecoration(
-        color: Colors.grey,
+        color: Colors.grey[400],
         borderRadius: BorderRadius.circular(30),
-        gradient: kDefaultGradiente,
         boxShadow: [
           BoxShadow(
             offset: Offset(0, 10),
@@ -39,7 +37,7 @@ class DefaultButton extends StatelessWidget {
               children: [
                 Icon(
                   icon,
-                  color: Colors.white,
+                  color: Colors.black,
                   size: 25,
                 ),
                 SizedBox(
@@ -47,7 +45,7 @@ class DefaultButton extends StatelessWidget {
                 ),
                 Text(
                   text,
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.black),
                 ),
               ],
             ),
