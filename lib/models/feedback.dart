@@ -15,21 +15,21 @@ List<Feedback> feedbacks = [
     name: "Ronald Thompson",
     review: review,
     userPic: "assets/images/perfil1.png",
-    color: Color(0xFFFFF3DD),
+    color: Color.fromARGB(255, 238, 178, 67),
   ),
   Feedback(
     id: 2,
     name: "Ronald Thompson",
     review: review,
     userPic: "assets/images/perfil2.jpg",
-    color: Color(0xFFD9FFFC),
+    color: Color.fromARGB(255, 40, 221, 206),
   ),
   Feedback(
     id: 3,
     name: "Ronald Thompson",
     review: review,
     userPic: "assets/images/perfil4.png",
-    color: Color(0xFFFFE0E0),
+    color: Color.fromARGB(255, 243, 46, 46),
   ),
 ];
 

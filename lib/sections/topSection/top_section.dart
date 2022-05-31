@@ -13,6 +13,7 @@ class TopSection extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Container(
       alignment: Alignment.center,
+      margin: EdgeInsets.only(bottom: kDefaultPadding * 4),
       constraints: BoxConstraints(maxHeight: 900, minHeight: 700),
       width: double.infinity,
       decoration: BoxDecoration(
@@ -28,13 +29,16 @@ class TopSection extends StatelessWidget {
           children: [
             LogoAndBlurBox(size: size),
             Positioned(
-              bottom: 15,
+              bottom: 0,
               right: 50,
               child: PersonPic(),
             ),
             Positioned(
               bottom: 0,
-              child: Menu(),
+              child: Transform.translate(
+                offset: Offset(0, 35),
+                child: Menu(),
+              ),
             ),
           ],
         ),

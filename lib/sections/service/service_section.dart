@@ -18,7 +18,6 @@ class _ServiceSectionState extends State<ServiceSection> {
       alignment: Alignment.center,
       constraints: BoxConstraints(maxHeight: 600, minHeight: 400),
       width: double.infinity,
-      color: Colors.black87,
       child: Container(
         margin: EdgeInsets.symmetric(vertical: kDefaultPadding * 2),
         constraints: BoxConstraints(maxWidth: 1110),

@@ -11,7 +11,7 @@ List<RecentWork> recentWorks = [
     id: 1,
     title: "New & Fresh Looking Portfolio indeed at the end",
     category: "Graphic Design",
-    image: "assets/images/perfil3.jpg",
+    image: "assets/images/perfil1.png",
   ),
   RecentWork(
     id: 2,
@@ -29,6 +29,6 @@ List<RecentWork> recentWorks = [
     id: 4,
     title: "New & Fresh Looking Portfolio indeed at the end",
     category: "Graphic Design",
-    image: "assets/images/perfil2.jpg",
+    image: "assets/images/top-perfil1.png",
   ),
 ];

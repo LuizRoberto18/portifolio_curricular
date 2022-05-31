@@ -8,13 +8,13 @@ const kDefaultPadding = 20.0;
 final kDefaultShadow = BoxShadow(
   offset: Offset(0, 50),
   blurRadius: 50,
-  color: Color(0xFF0700B1).withOpacity(0.15),
+  color: Colors.black.withOpacity(0.3),
 );
 
 final kDefaultCardShadow = BoxShadow(
   offset: Offset(0, 20),
   blurRadius: 50,
-  color: Colors.white.withOpacity(0.3),
+  color: Colors.black.withOpacity(0.4),
 );
 
 final kDefaultGradiente = LinearGradient(
