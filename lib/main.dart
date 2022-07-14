@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:portifolio_curriculo/home_page.dart';
 
+import 'constants.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -13,7 +15,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Curriculo Luiz Roberto',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(),
+      theme: ThemeData(
+        inputDecorationTheme: kDefaultInputDecorationTheme,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
       home: HomePage(),
     );
   }

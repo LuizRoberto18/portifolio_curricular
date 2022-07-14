@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:portifolio_curriculo/constants.dart';
 import 'package:portifolio_curriculo/sections/about/about_section.dart';
+import 'package:portifolio_curriculo/sections/baseboard/rodape_section.dart';
+import 'package:portifolio_curriculo/sections/contact/contact_section.dart';
 import 'package:portifolio_curriculo/sections/feedback/feedback_section.dart';
 import 'package:portifolio_curriculo/sections/recent_work/recent_work_section.dart';
 import 'package:portifolio_curriculo/sections/service/service_section.dart';
@@ -26,9 +28,10 @@ class _HomePageState extends State<HomePage> {
             ServiceSection(),
             RecentWorkSection(),
             FeedbackSection(),
-            SizedBox(
-              height: 500,
-            ),
+            SizedBox(height: kDefaultPadding),
+            ContactSection(),
+            BaseboardSection(),
+           
           ],
         ),
       ),

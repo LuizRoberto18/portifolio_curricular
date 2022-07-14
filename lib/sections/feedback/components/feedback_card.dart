@@ -51,6 +51,7 @@ class _FeedbackCardState extends State<FeedbackCard> {
                   border: Border.all(color: Colors.white, width: 10),
                   boxShadow: [if (!isHover) kDefaultCardShadow],
                   image: DecorationImage(
+                    fit: BoxFit.cover,
                     image: AssetImage(feedbacks[widget.index].userPic!),
                   ),
                 ),
