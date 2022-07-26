@@ -19,6 +19,7 @@ class ContactBox extends StatelessWidget {
         top: kDefaultPadding * 3,
         right: kDefaultPadding * 3,
         bottom: kDefaultPadding * 3,
+        left: kDefaultPadding * 3,
       ),
       decoration: BoxDecoration(
         color: Colors.white,
@@ -28,26 +29,19 @@ class ContactBox extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          Image.asset(
-            "assets/images/contato.jpg",
-            height: 500,
-            width: 400,
-          ),
           Expanded(
             child: Column(
               children: [
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     SocialCard(
-                      color: Colors.grey.shade400,
-                      iconSrc: "assets/images/logo-github.png",
+                      iconSrc: "assets/images/icons-github.png",
                       name: "GitHub",
                       press: () {},
                     ),
                     SocialCard(
-                      color: Colors.blue.shade200,
-                      iconSrc: "assets/images/logo-linkedin.png",
+                      iconSrc: "assets/images/icons-linkedin.png",
                       name: "Linkedin",
                       press: () {},
                     ),

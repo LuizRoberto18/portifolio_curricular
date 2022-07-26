@@ -4,13 +4,12 @@ import '../../../constants.dart';
 
 class SocialCard extends StatefulWidget {
   final String? iconSrc, name;
-  final Color? color;
+
   final Function press;
   const SocialCard({
     Key? key,
     this.iconSrc,
     this.name,
-    this.color,
     required this.press,
   }) : super(key: key);
 
@@ -37,7 +36,7 @@ class _SocialCardState extends State<SocialCard> {
             horizontal: kDefaultPadding * 1.5,
           ),
           decoration: BoxDecoration(
-            color: widget.color!,
+            color: Colors.black54,
             borderRadius: BorderRadius.circular(10),
             boxShadow: [if (isHover) kDefaultCardShadow],
           ),
@@ -50,7 +49,13 @@ class _SocialCardState extends State<SocialCard> {
                 fit: BoxFit.cover,
               ),
               SizedBox(width: kDefaultPadding),
-              Text(widget.name!),
+              Text(
+                widget.name!,
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold),
+              ),
             ],
           ),
         ),

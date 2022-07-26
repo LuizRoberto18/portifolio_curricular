@@ -16,7 +16,7 @@ class HireMeCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(20),
-        boxShadow: [kDefaultShadow],
+        boxShadow: [kDefaultCardShadow],
       ),
       child: Row(
         children: [

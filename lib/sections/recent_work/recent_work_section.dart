@@ -20,7 +20,7 @@ class _RecentWorkSectionState extends State<RecentWorkSection> {
       width: double.infinity,
       // height: 700,
       decoration: BoxDecoration(
-        color: Colors.black45,
+        color: Colors.black87,
         /*image: DecorationImage(
           fit: BoxFit.cover,
           image: AssetImage("assets/images/fundo-triangulo-neon.png"),
@@ -38,10 +38,14 @@ class _RecentWorkSectionState extends State<RecentWorkSection> {
             color: Colors.amberAccent.shade700,
           ),
           SizedBox(height: kDefaultPadding * 1.5),
-          SizedBox(
-            width: 1110,
+          Container(
+            width: 1210,
+            padding: EdgeInsets.only(
+              left: kDefaultPadding * 2,
+              right: kDefaultPadding,
+            ),
             child: Wrap(
-              spacing: kDefaultPadding,
+              spacing: kDefaultPadding * 1.5,
               runSpacing: kDefaultPadding * 2,
               children: List.generate(
                   recentWorks.length,

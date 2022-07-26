@@ -14,7 +14,7 @@ final kDefaultShadow = BoxShadow(
 final kDefaultCardShadow = BoxShadow(
   offset: Offset(0, 20),
   blurRadius: 50,
-  color: Colors.black.withOpacity(0.4),
+  color: Colors.black.withOpacity(0.5),
 );
 
 final kDefaultGradiente = LinearGradient(

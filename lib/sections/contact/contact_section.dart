@@ -32,7 +32,44 @@ class _ContactSectionState extends State<ContactSection> {
             subTitle: "For project inquiry and information",
             color: Colors.purple.shade300,
           ),
-          ContactBox(),
+          const ContactBox(),
+          Padding(
+            padding:
+                const EdgeInsets.symmetric(horizontal: kDefaultPadding * 10),
+            child: Divider(
+              color: kTextColor,
+              height: 5,
+            ),
+          ),
+          Container(
+            height: 100,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                const Text(
+                  "Copyright \u00a9  2022 - By Luiz",
+                  style: TextStyle(
+                    color: kTextColor,
+                  ),
+                ),
+                Container(
+                  height: 50,
+                  width: 100,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Image.asset(
+                        "assets/images/icons-github.png",
+                      ),
+                      Image.asset(
+                        "assets/images/icons-linkedin.png",
+                      )
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );

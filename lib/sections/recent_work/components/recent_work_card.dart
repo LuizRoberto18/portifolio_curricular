@@ -29,11 +29,11 @@ class _RecentWorkCardState extends State<RecentWorkCard> {
       },
       child: AnimatedContainer(
         duration: Duration(milliseconds: 200),
-        width: 520,
+        width: 550,
         height: 320,
         decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.horizontal(right: Radius.circular(10)),
           boxShadow: [if (isHover) kDefaultCardShadow],
         ),
         child: Row(
@@ -41,7 +41,7 @@ class _RecentWorkCardState extends State<RecentWorkCard> {
             Image.asset(
               recentWorks[widget.index!].image!,
               fit: BoxFit.cover,
-              width: 200,
+              width: 250,
               height: 320,
             ),
             Expanded(
@@ -60,10 +60,21 @@ class _RecentWorkCardState extends State<RecentWorkCard> {
                           .headline5!
                           .copyWith(height: 1.5),
                     ),
-                    SizedBox(height: kDefaultPadding),
-                    Text(
-                      "View Detalhes",
-                      style: TextStyle(decoration: TextDecoration.underline),
+                    SizedBox(height: kDefaultPadding * 3),
+                    ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.amber,
+                        fixedSize: Size(250, 25),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                      child: Text(
+                        "Mais Detalhes",
+                        style: TextStyle(
+                            fontSize: 17, fontWeight: FontWeight.bold),
+                      ),
                     ),
                   ],
                 ),
