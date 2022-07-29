@@ -4,12 +4,12 @@ import '../../../constants.dart';
 import '../../../models/Service.dart';
 
 class ServiceCard extends StatefulWidget {
+  final int? index;
   const ServiceCard({
     Key? key,
     this.index,
   }) : super(key: key);
 
-  final int? index;
   @override
   State<ServiceCard> createState() => _ServiceCardState();
 }
@@ -67,7 +67,9 @@ class _ServiceCardState extends State<ServiceCard> {
             Text(
               services[widget.index!].title!,
               style: TextStyle(
-                fontSize: 22,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
               ),
             ),
           ],

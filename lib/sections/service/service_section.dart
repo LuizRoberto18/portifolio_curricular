@@ -24,8 +24,8 @@ class _ServiceSectionState extends State<ServiceSection> {
         child: Column(
           children: [
             SectionTitle(
-              title: "Service Offerings",
-              subTitle: "My Strong Arenas",
+              title: "Serviços oferecidos",
+              subTitle: "Minhas areas mais fortes",
               color: Colors.purple.shade400,
             ),
             Row(

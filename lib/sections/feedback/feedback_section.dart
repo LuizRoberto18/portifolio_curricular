@@ -21,8 +21,8 @@ class _FeedbackSectionState extends State<FeedbackSection> {
       child: Column(
         children: [
           SectionTitle(
-            title: "Feedback Received",
-            subTitle: "Client's testimonials that inspired me a lot",
+            title: "Feedback`s Recebidos",
+            subTitle: "Depoimento de clientes que me inspiraram muito",
             color: Colors.blue,
           ),
           SizedBox(height: kDefaultPadding),

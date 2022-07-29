@@ -20,8 +20,8 @@ class ContactForm extends StatelessWidget {
             child: TextFormField(
               onChanged: (value) {},
               decoration: InputDecoration(
-                labelText: "Your Name",
-                hintText: "Enter Your Name",
+                labelText: "Seu nome",
+                hintText: "Digite seu nome",
               ),
             ),
           ),
@@ -30,8 +30,8 @@ class ContactForm extends StatelessWidget {
             child: TextFormField(
               onChanged: (value) {},
               decoration: InputDecoration(
-                labelText: "Email Address",
-                hintText: "Enter Your Email address",
+                labelText: "Endereço de E-mail",
+                hintText: "Insira seu endereço de E-mail",
               ),
             ),
           ),
@@ -40,8 +40,8 @@ class ContactForm extends StatelessWidget {
             child: TextFormField(
               onChanged: (value) {},
               decoration: InputDecoration(
-                labelText: "Project Type",
-                hintText: "Select Project Type",
+                labelText: "Tipo do projeto",
+                hintText: "Informe o tipo do projeto",
               ),
             ),
           ),
@@ -50,8 +50,8 @@ class ContactForm extends StatelessWidget {
             child: TextFormField(
               onChanged: (value) {},
               decoration: InputDecoration(
-                labelText: "Project Budget",
-                hintText: "Select Project Budget",
+                labelText: "Orçamento do projeto",
+                hintText: "valor para o orçamento do projeto",
               ),
             ),
           ),
@@ -60,15 +60,15 @@ class ContactForm extends StatelessWidget {
             child: TextFormField(
               onChanged: (value) {},
               decoration: InputDecoration(
-                labelText: "Description",
-                hintText: "Write some description",
+                labelText: "Descrição",
+                hintText: "Escreva uma descrição",
               ),
             ),
           ),
           SizedBox(height: kDefaultPadding * 2),
           Center(
             child: DefaultButton(
-                text: "Contact Me!", icon: Icons.telegram_sharp, press: () {}),
+                text: "Contate-me!", icon: Icons.telegram_sharp, press: () {}),
           ),
         ],
       ),

@@ -14,7 +14,7 @@ class ExperienceCard extends StatelessWidget {
       margin: EdgeInsets.symmetric(horizontal: kDefaultPadding),
       padding: EdgeInsets.all(kDefaultPadding),
       height: 240,
-      width: 255,
+      width: 240,
       decoration: BoxDecoration(
         gradient: kDefaultGradiente,
         borderRadius: BorderRadius.circular(10),
@@ -66,7 +66,7 @@ class ExperienceCard extends StatelessWidget {
             ),
             SizedBox(height: kDefaultPadding / 2),
             Text(
-              "Yers of Experience",
+              "Anos de experiência",
               style: TextStyle(
                 color: Color.fromARGB(255, 242, 1, 255),
               ),

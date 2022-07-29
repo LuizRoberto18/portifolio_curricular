@@ -13,26 +13,26 @@ class Service {
 List<Service> services = [
   Service(
     id: 1,
-    title: "Graphic Design",
-    image: "assets/images/logo-design.png",
+    title: "Design Gráfico",
+    image: "assets/images/logo-mao-design.png",
     gradient: kDefaultGradiente,
   ),
   Service(
     id: 2,
-    title: "Web Developer",
+    title: "Desenvolvedor Web",
     image: "assets/images/logo-front-end.png",
-    color: Color.fromARGB(255, 221, 207, 17),
-  ),
-  Service(
-    id: 4,
-    title: "Interaction UI UX",
-    image: "assets/images/logo-ui-ux.png",
-    color: Color.fromARGB(255, 7, 116, 189),
+    color: Colors.amber,
   ),
   Service(
     id: 3,
-    title: "Back-End Developer",
-    image: "assets/images/logo-back-end.png",
-    color: Colors.grey[600],
+    title: "Interação UI UX",
+    image: "assets/images/icons-ui-design.png",
+    color: Color.fromARGB(255, 7, 116, 189),
+  ),
+  Service(
+    id: 4,
+    title: "Desenvolvedor Back-End",
+    image: "assets/images/icons-backend.png",
+    color: Color.fromARGB(242, 27, 27, 27),
   ),
 ];

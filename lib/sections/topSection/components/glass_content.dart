@@ -29,7 +29,7 @@ class GlassContent extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "Hello There!",
+                "Olá!",
                 style: Theme.of(context)
                     .textTheme
                     .headline5!
@@ -45,7 +45,7 @@ class GlassContent extends StatelessWidget {
                 ),
               ),
               Text(
-                "Creative Design Diretor",
+                "Desenvolvedor de sistemas",
                 style: Theme.of(context)
                     .textTheme
                     .headline5!

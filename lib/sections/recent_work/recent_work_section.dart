@@ -33,8 +33,8 @@ class _RecentWorkSectionState extends State<RecentWorkSection> {
             child: HireMeCard(),
           ),
           SectionTitle(
-            title: "Recents Woorks",
-            subTitle: "My Strong Arenas",
+            title: "Trabalhos Recentes",
+            subTitle: "Minhas areas fortes",
             color: Colors.amberAccent.shade700,
           ),
           SizedBox(height: kDefaultPadding * 1.5),

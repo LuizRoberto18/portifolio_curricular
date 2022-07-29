@@ -14,6 +14,7 @@ class AboutSectionText extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
       child: Text(
         text,
+        textAlign: TextAlign.justify,
         style: TextStyle(
             fontWeight: FontWeight.w200, color: kTextColor, height: 2),
       ),

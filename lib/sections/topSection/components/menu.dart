@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:portifolio_curriculo/sections/about/about_section.dart';
+import 'package:portifolio_curriculo/sections/contact/contact_section.dart';
+import 'package:portifolio_curriculo/sections/feedback/feedback_section.dart';
+import 'package:portifolio_curriculo/sections/service/service_section.dart';
 
 import '../../../constants.dart';
+import '../../recent_work/recent_work_section.dart';
 
 class Menu extends StatefulWidget {
   const Menu({Key? key}) : super(key: key);
@@ -13,12 +18,18 @@ class _MenuState extends State<Menu> {
   int selectedIndex = 0;
   int hoverIndex = 0;
   List<String> menuItems = [
-    "Home",
-    "About",
-    "Services",
-    "Portfolio",
-    "Testimonial",
-    "Contact"
+    "Sobre mim",
+    "Serviços",
+    "Portfólio",
+    "Feedback`s",
+    "Contato"
+  ];
+  List<Widget> sections = [
+    AboutSection(),
+    ServiceSection(),
+    RecentWorkSection(),
+    FeedbackSection(),
+    ContactSection(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -46,6 +57,7 @@ class _MenuState extends State<Menu> {
 
   Widget buildMenuItem(int index) => InkWell(
         onTap: () {
+          print(sections[selectedIndex]);
           setState(() {
             selectedIndex = index;
           });
