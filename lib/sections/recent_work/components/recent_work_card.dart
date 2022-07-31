@@ -61,22 +61,20 @@ class _RecentWorkCardState extends State<RecentWorkCard> {
           Center(
             child: Text(
               recentWorks[widget.index!].descricao!,
-              style: TextStyle(),
+              style: TextStyle(fontSize: 17),
               textAlign: TextAlign.justify,
             ),
           ),
-          300);
+          400);
       await launchUrl(Uri.parse(url));
     } else {
       return messageDialog(
           context,
           Image.asset(
             recentWorks[widget.index!].url!,
-            fit: BoxFit.cover,
+            fit: BoxFit.fill,
           ),
           500);
-      //return messageDialog(context, "Não é possivel acessar a $url");
-      //throw "Não é possivel acessar a $url";
     }
   }
 
